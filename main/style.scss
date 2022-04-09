@@ -1,7 +1,9 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 
 $color_primary: #F1CDB3;
 $color_light_s: #FAFAFA;
@@ -9,7 +11,25 @@ $color_light_xl: #FFFFFF;
 $color-dark-3xl: #292929;
 $color-dark-s: #CDCDCD;
 
+$h3_h3{
+    //styleName: h3;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    text-align: left;
 
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 .content{
     width: 1280px;
     margin-left: auto;
@@ -25,7 +45,9 @@ $color-dark-s: #CDCDCD;
 
         .header{
             height: 60px;
-            width: 100%;
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
             top: 60px;
             display: flex;
             justify-content: space-between;
@@ -38,22 +60,23 @@ $color-dark-s: #CDCDCD;
                     
 
                     .logo_title{
-                        width: 184px;
+                        width: 200px;
                         height: 35px;
                         font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 32px;
+                        line-height: 35px;
                         line-height: 110%;
-                        vertical-align: center;
-                        font-size: 28px;
-                        letter-spacing: 6%;
+                        letter-spacing: 2px;
                         color: $color_primary;
                     }
                     .logo_subTitle{
+                        margin-left: 2%;
                         height: 15px;
                         font-family: Arial;
                         font-size: 13px;
                         line-height: 100%;
                         vertical-align: center;
-                        letter-spacing: 0.8px;
+                        letter-spacing: 1.3px;
                         color:  $color_light_xl;
                     
                     }
@@ -64,19 +87,17 @@ $color-dark-s: #CDCDCD;
                 
                     .header_navigation_list{
                         list-style-type: none;
+                        margin-bottom: 2.8px;
                         display: flex;
                         justify-content: space-between;
                         width: 443px;
                         height: 27px;
                         line-height: 160%;
                         font-family: Arial, Helvetica, sans-serif;
-                        font-weight: 400, Regular;
-                        size: 15px;
+                        font-weight: 400;
+                        font-size: 15px;
                         line-height: 24px;
                         color: $color_light_s;
-                        .header_navigation_list_cell{
-                            color: $color-dark-s;
-                        }
 
                         .header_navigator_list_cell:hover{
                             cursor: pointer;
@@ -95,14 +116,27 @@ $color-dark-s: #CDCDCD;
         .start_screen_content{
             height: 728px;
             margin-top: 60px;
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
             display: flex;
             justify-content: space-between;
 
             .start_screen_content_content{
+                
                 margin-top: 163px;
                 color: $color_light_xl;
 
+                .start_screen_content_heading{
+                    //styleName: h2;
+                    font-family: Georgia;
+                    font-size: 44px;
+                    font-weight: 400;
+                    line-height: 57px;
+                    letter-spacing: 0em;
+                    text-align: left;
 
+                }
                 .start_screen_content_subheading{
                     margin-top: 42px;
                     width: 460px;
@@ -120,11 +154,15 @@ $color-dark-s: #CDCDCD;
                 .start_screen_cntent_button_primery{ // здесь надо поработать нат коректным отоброжением текста внутри кнопки или переделеать на инпут
                     width: 207px;
                     background-color: $color_primary;
-                    
                     border: 0;
-                    border-radius: 20px;
+                    border-radius: 40px;
                     margin-top: 42px;
-                    color: $color_primary;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: 1px;
+                    color: $color-dark-3xl;
                     padding: 15px 45px 15px 45px;
 
                 }

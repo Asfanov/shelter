@@ -1,6 +1,17 @@
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 .content {
@@ -17,7 +28,9 @@
 
 .content .start_screen .header {
   height: 60px;
-  width: 100%;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
   top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,23 +55,24 @@
 }
 
 .content .start_screen .header .logo .logo_title {
-  width: 184px;
+  width: 200px;
   height: 35px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 32px;
+  line-height: 35px;
   line-height: 110%;
-  vertical-align: center;
-  font-size: 28px;
-  letter-spacing: 6%;
+  letter-spacing: 2px;
   color: #F1CDB3;
 }
 
 .content .start_screen .header .logo .logo_subTitle {
+  margin-left: 2%;
   height: 15px;
   font-family: Arial;
   font-size: 13px;
   line-height: 100%;
   vertical-align: center;
-  letter-spacing: 0.8px;
+  letter-spacing: 1.3px;
   color: #FFFFFF;
 }
 
@@ -71,6 +85,7 @@
 
 .content .start_screen .header .header_navigation .header_navigation_list {
   list-style-type: none;
+  margin-bottom: 2.8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,14 +96,10 @@
   height: 27px;
   line-height: 160%;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400, Regular;
-  size: 15px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 24px;
   color: #FAFAFA;
-}
-
-.content .start_screen .header .header_navigation .header_navigation_list .header_navigation_list_cell {
-  color: #CDCDCD;
 }
 
 .content .start_screen .header .header_navigation .header_navigation_list .header_navigator_list_cell:hover {
@@ -106,6 +117,9 @@
 .content .start_screen .start_screen_content {
   height: 728px;
   margin-top: 60px;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +131,15 @@
 .content .start_screen .start_screen_content .start_screen_content_content {
   margin-top: 163px;
   color: #FFFFFF;
+}
+
+.content .start_screen .start_screen_content .start_screen_content_content .start_screen_content_heading {
+  font-family: Georgia;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .content .start_screen .start_screen_content .start_screen_content_content .start_screen_content_subheading {
@@ -134,9 +157,14 @@
   width: 207px;
   background-color: #F1CDB3;
   border: 0;
-  border-radius: 20px;
+  border-radius: 40px;
   margin-top: 42px;
-  color: #F1CDB3;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #292929;
   padding: 15px 45px 15px 45px;
 }
 
