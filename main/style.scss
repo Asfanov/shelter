@@ -11,13 +11,23 @@ $color_light_xl: #FFFFFF;
 $color-dark-3xl: #292929;
 $color-dark-s: #CDCDCD;
 
-$h3_h3{
+%h3_h3{
     //styleName: h3;
     font-family: Georgia;
     font-size: 35px;
     font-weight: 400;
     line-height: 45px;
     letter-spacing: 0.06em;
+    text-align: left;
+}
+
+%paragraph1{
+    //styleName: paragraph-l;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
     text-align: left;
 
 }
@@ -183,5 +193,30 @@ h1{
     .about{
         height: 588px;
         border: 1px solid green;
+     
+        .about_container{
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+                .about_content_img{
+                    margin-top: 80px;
+                    margin-right: 10%;
+                }
+                .about_pets_content{
+                    margin-top: 94px;
+                    height: 380px;
+                    width: 430px;
+                        .about_pets_content_heading{
+                            @extend %h3_h3;
+                        }
+                        .about_pets_content_Subheading{
+                            margin-top: 25px;
+                            @extend %paragraph1;
+                        }
+
+                }
+            }
     }
 }
