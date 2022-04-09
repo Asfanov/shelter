@@ -2,3 +2,148 @@
     padding: 0;
     margin: 0;
 }
+
+$color_primary: #F1CDB3;
+$color_light_s: #FAFAFA;
+$color_light_xl: #FFFFFF;
+$color-dark-3xl: #292929;
+$color-dark-s: #CDCDCD;
+
+
+.content{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .start_screen{
+        height: 908px;
+        border: 1px solid black;
+        background-image: url(../images/start-screen-background.jpg);
+        
+      
+        
+
+        .header{
+            height: 60px;
+            width: 100%;
+            top: 60px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+
+                .logo{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+
+                    .logo_title{
+                        width: 184px;
+                        height: 35px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        line-height: 110%;
+                        vertical-align: center;
+                        font-size: 28px;
+                        letter-spacing: 6%;
+                        color: $color_primary;
+                    }
+                    .logo_subTitle{
+                        height: 15px;
+                        font-family: Arial;
+                        font-size: 13px;
+                        line-height: 100%;
+                        vertical-align: center;
+                        letter-spacing: 0.8px;
+                        color:  $color_light_xl;
+                    
+                    }
+                }
+                .header_navigation{
+                    position: inherit;
+                    align-self: center;
+                
+                    .header_navigation_list{
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 443px;
+                        height: 27px;
+                        line-height: 160%;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 400, Regular;
+                        size: 15px;
+                        line-height: 24px;
+                        color: $color_light_s;
+                        .header_navigation_list_cell{
+                            color: $color-dark-s;
+                        }
+
+                        .header_navigator_list_cell:hover{
+                            cursor: pointer;
+                            border-bottom: solid 3px;
+                            border-bottom-color: $color_primary;
+
+                        }
+                        .border_bottom_active{
+                            cursor: pointer;
+                            border-bottom: solid 3px;
+                            border-bottom-color: $color_primary;
+                        }
+            }
+                }
+        }
+        .start_screen_content{
+            height: 728px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .start_screen_content_content{
+                margin-top: 163px;
+                color: $color_light_xl;
+
+
+                .start_screen_content_subheading{
+                    margin-top: 42px;
+                    width: 460px;
+                    color: $color-dark-s;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-style: Regular;
+                    font-size:15px;
+                    vertical-align: center;
+                    line-height: 24px;
+
+
+                    
+                }
+
+                .start_screen_cntent_button_primery{ // здесь надо поработать нат коректным отоброжением текста внутри кнопки или переделеать на инпут
+                    width: 207px;
+                    background-color: $color_primary;
+                    
+                    border: 0;
+                    border-radius: 20px;
+                    margin-top: 42px;
+                    color: $color_primary;
+                    padding: 15px 45px 15px 45px;
+
+                }
+            }
+
+            .start_screen_image_puppy{
+                .image_puppy{
+                    height: 728px;
+                    
+                    
+                }
+                
+            }
+
+        }
+    }
+
+    .about{
+        height: 588px;
+        border: 1px solid green;
+    }
+}
