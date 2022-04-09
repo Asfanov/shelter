@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-.content .about .about_container .about_pets_content .about_pets_content_heading {
+.content .about .about_container .about_pets_content .about_pets_content_heading, .content .Pets .pets_container .pets_container_pets_content .pets_content_heading {
   font-family: Georgia;
   font-size: 35px;
   font-weight: 400;
@@ -21,6 +21,29 @@
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider .pets_slier_card .slider_pets {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider .pets_slier_card .button_secondary {
+  height: 52px;
+  width: 187px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
 }
 
 h1 {
@@ -192,7 +215,6 @@ h1 {
 
 .content .about {
   height: 588px;
-  border: 1px solid green;
 }
 
 .content .about .about_container {
@@ -220,5 +242,64 @@ h1 {
 
 .content .about .about_container .about_pets_content .about_pets_content_Subheading {
   margin-top: 25px;
+}
+
+.content .Pets {
+  background-color: #E5E5E5;
+  border: 1px solid black;
+  height: 877px;
+  width: 100%;
+}
+
+.content .Pets .pets_container {
+  width: 94%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content .Pets .pets_container .pets_container_pets_content {
+  height: 697px;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .pets_content_heading {
+  text-align: center;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider .button_arrow {
+  height: 52px;
+  width: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider .pets_slier_card {
+  height: 435px;
+  background-color: #CDCDCD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider .pets_slier_card .slider_pets {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
