@@ -5,11 +5,29 @@
   margin: 0;
 }
 
-.content .about .about_container .about_pets_content .about_pets_content_heading, .content .Pets .pets_container .pets_container_pets_content .pets_content_heading {
+.content .about .about_container .about_pets_content .about_pets_content_heading, .content .Pets .pets_container .pets_container_pets_content .pets_content_heading, .content .Help .help_content .help_content_heading, .content .Donation .donation_content .donation_content_container .donation_donation_dog_content .dog_content_heading, .content .shelter_footer .footer_content .footer_content_contacts .footer_contact_title, .content .shelter_footer .footer_content .footer_content_contacts .footer_location_title, .content .shelter_footer .footer_content .footer_content_location .footer_location_title {
   font-family: Georgia;
   font-size: 35px;
   font-weight: 400;
   line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.content .Help .help_content .help_content_list .list_content_wraper_icons .figcaption_pets, .content .shelter_footer .footer_content .footer_content_contacts .footer_contact_mail, .content .shelter_footer .footer_content .footer_content_contacts .footer_contact_phone, .content .shelter_footer .footer_content .footer_content_location .footer_location_Boston, .content .shelter_footer .footer_content .footer_content_location .footer_location_London {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.content .Donation .donation_content .donation_content_container .donation_donation_dog_content .dog_content_subheading {
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
   letter-spacing: 0.06em;
   text-align: left;
 }
@@ -47,6 +65,12 @@
   border: 0;
   border-radius: 100px;
   background-color: #F1CDB3;
+  color: #292929;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .container_button_primary .button_primary:hover {
+  cursor: pointer;
+  background-color: #FDDCC4;
 }
 
 .content .Pets .pets_container .pets_container_pets_content .slider .slider_cards .pets_slider_card .button_secondary {
@@ -65,6 +89,12 @@
           align-items: center;
   font-size: 17px;
   letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.content .Pets .pets_container .pets_container_pets_content .slider .slider_cards .pets_slider_card .button_secondary:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 
 h1 {
@@ -363,5 +393,237 @@ h1 {
 .content .Pets .pets_container .pets_container_pets_content .container_button_primary .button_primary {
   margin-top: 60px;
   font-size: 17px;
+}
+
+.content .Help {
+  height: 611px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.content .Help .help_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px auto 0;
+}
+
+.content .Help .help_content .help_content_heading {
+  display: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.content .Help .help_content .help_content_list {
+  margin: 60px auto 0px;
+  height: 281px;
+  width: 80%;
+  border: 1px solid black;
+  display: inherit;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .Help .help_content .help_content_list .list_content_wraper_icons {
+  text-align: center;
+}
+
+.content .Help .help_content .help_content_list .list_content_wraper_icons .figcaption_pets {
+  margin-top: 30px;
+}
+
+.content .Donation {
+  height: 462px;
+}
+
+.content .Donation .donation_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px auto 0;
+  width: 71.49%;
+  height: 282px;
+}
+
+.content .Donation .donation_content .donation_content_container {
+  width: 100%;
+  display: inherit;
+}
+
+.content .Donation .donation_content .donation_content_container .img_donation_dog {
+  margin: 11px 0 10px;
+  height: 261px;
+}
+
+.content .Donation .donation_content .donation_content_container .donation_donation_dog_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 3.28%;
+  width: 58%;
+}
+
+.content .Donation .donation_content .donation_content_container .donation_donation_dog_content .dog_content_subheading {
+  margin-top: 20px;
+}
+
+.content .Donation .donation_content .donation_content_container .donation_donation_dog_content .donation_input {
+  height: 43px;
+  border-radius: 9px;
+  background-color: #F1CDB3;
+  border: 0;
+  margin-top: 20px;
+  width: 92%;
+}
+
+.content .Donation .donation_content .donation_content_container .donation_donation_dog_content .donation_dog_article {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 20px;
+  color: #B2B2B2;
+}
+
+.content .shelter_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/footer-background.png);
+  height: 350px;
+  width: 100%;
+}
+
+.content .shelter_footer .footer_content {
+  display: inherit;
+  width: 93.8%;
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px auto 0px;
+}
+
+.content .shelter_footer .footer_content .footer_content_contacts {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 234px;
+  margin-top: 16px;
+}
+
+.content .shelter_footer .footer_content .footer_content_contacts .footer_contact_title {
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.content .shelter_footer .footer_content .footer_content_contacts .footer_contact_mail {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5%;
+  color: #F1CDB3;
+}
+
+.content .shelter_footer .footer_content .footer_content_contacts .footer_contact_phone {
+  width: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F1CDB3;
+}
+
+.content .shelter_footer .footer_content .footer_content_contacts .footer_content_location {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .shelter_footer .footer_content .footer_content_contacts .footer_location_title {
+  color: #FFFFFF;
+}
+
+.content .shelter_footer .footer_content .footer_content_location {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 234px;
+  margin-top: 16px;
+  margin-right: 2%;
+}
+
+.content .shelter_footer .footer_content .footer_content_location .footer_location_title {
+  color: #FFFFFF;
+}
+
+.content .shelter_footer .footer_content .footer_content_location .footer_location_Boston {
+  width: 106.5%;
+  display: inherit;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F1CDB3;
+}
+
+.content .shelter_footer .footer_content .footer_content_location .footer_location_London {
+  width: 97.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F1CDB3;
 }
 /*# sourceMappingURL=style.css.map */

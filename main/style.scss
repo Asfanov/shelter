@@ -6,10 +6,12 @@
 
 
 $color_primary: #F1CDB3;
+$color_primary_light: #FDDCC4;
 $color_light_s: #FAFAFA;
 $color_light_xl: #FFFFFF;
 $color-dark-3xl: #292929;
 $color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
 $color_background: #E5E5E5;
 
 %h3_h3{
@@ -20,6 +22,25 @@ $color_background: #E5E5E5;
     line-height: 45px;
     letter-spacing: 0.06em;
     text-align: left;
+}
+%h4_h4{
+    //styleName: h4;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+%h5_h5{
+    //styleName: h5;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
 }
 
 %paragraph1{
@@ -48,7 +69,12 @@ $color_background: #E5E5E5;
     border: 0;
     border-radius: 100px;
     background-color: $color_primary;
-    
+    color: $color-dark-3xl;
+    &:hover{
+        cursor: pointer;
+        background-color: $color_primary_light;
+    }
+
 }
 %button_secondary{
     height: 52px;
@@ -60,7 +86,14 @@ $color_background: #E5E5E5;
     align-items: center;
     font-size: 17px;
     letter-spacing: 0.06em;
-    
+    color: $color-dark-3xl;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $color_primary;
+
+    }
+
 }
 
 h1{
@@ -82,9 +115,9 @@ h1{
         height: 908px;
         border: 1px solid black;
         background-image: url(../images/start-screen-background.jpg);
-        
-      
-        
+
+
+
 
         .header{
             height: 60px;
@@ -100,7 +133,7 @@ h1{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    
+
 
                     .logo_title{
                         width: 200px;
@@ -121,13 +154,13 @@ h1{
                         vertical-align: center;
                         letter-spacing: 1.3px;
                         color:  $color_light_xl;
-                    
+
                     }
                 }
                 .header_navigation{
                     position: inherit;
                     align-self: center;
-                
+
                     .header_navigation_list{
                         list-style-type: none;
                         margin-bottom: 2.8px;
@@ -166,7 +199,7 @@ h1{
             justify-content: space-between;
 
             .start_screen_content_content{
-                
+
                 margin-top: 163px;
                 color: $color_light_xl;
 
@@ -191,7 +224,7 @@ h1{
                     line-height: 24px;
 
 
-                    
+
                 }
 
                 .start_screen_cntent_button_primery{ // здесь надо поработать нат коректным отоброжением текста внутри кнопки или переделеать на инпут
@@ -214,10 +247,10 @@ h1{
             .start_screen_image_puppy{
                 .image_puppy{
                     height: 728px;
-                    
-                    
+
+
                 }
-                
+
             }
 
         }
@@ -260,19 +293,19 @@ h1{
             width: 94%;
             margin-right: auto;
             margin-left: auto;
-        
+
             .pets_container_pets_content{
                 height: 697px;
                 margin-top: 80px;
                 display: flex;
                 flex-direction: column;
-              
-                
+
+
 
                 .pets_content_heading{
                     @extend %h3_h3;
                     text-align: center;
-                        
+
                 }
                 .slider{
                     margin-top: 60px;
@@ -283,9 +316,6 @@ h1{
                         width: 52px;
                         border: 2px solid $color_primary;
                         border-radius: 50%;
-                        .arrow_right{
-                            
-                        }
                     }
                     .slider_cards{
                       width: 82.5%;
@@ -300,7 +330,7 @@ h1{
                             flex-direction: column;
                             align-items: center;
                             .slider_pets{
-                                @extend %Ag;         
+                                @extend %Ag;
                                 margin-top: 30px;
                             }
                             .button_secondary{
@@ -322,5 +352,188 @@ h1{
                 }
             }
         }
+    } //конец блока "Pets container"
+
+    .Help{
+        height: 611px;
+        width: 100%;
+        background-color: $color_light_xl;
+
+        .help_content{
+            display: flex;
+            flex-direction: column;
+            margin: 80px auto 0;
+
+
+            .help_content_heading{
+                @extend %h3_h3;
+                display: inherit;
+                justify-content: center;
+                text-align: center;
+
+            }
+            .help_content_list{
+                margin: 60px auto 0px;
+                height: 281px;
+                width: 80%;
+                border: 1px solid black;
+                display: inherit;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .list_content_wraper_icons{
+                    text-align: center;
+                    .figcaption_pets{
+                        margin-top: 30px;
+                        @extend %h4_h4;
+                    }
+                }
+            }
+        }
+    } //конец блока Help
+    .Donation{
+        height: 462px;
+        .donation_content{
+            display: flex;
+            justify-content: space-between;
+            margin: 80px auto 0;
+            width: 71.49%;
+            height: 282px;
+            .donation_content_container{
+                width: 100%;
+                display: inherit;
+                .img_donation_dog{ //обратить внимание
+                  margin: 11px 0 10px;
+                  height: 261px;
+
+                }
+                .donation_donation_dog_content{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3.28%; //обратить внимание
+                    width: 58%;
+                    .dog_content_heading{
+                        @extend %h3_h3;
+
+                    }
+                    .dog_content_subheading{
+                        @extend %h5_h5;
+                        margin-top: 20px;
+                    }
+                    .donation_input{
+                        height: 43px;
+                        border-radius: 9px;
+                        background-color: $color_primary;
+                        border: 0;
+                        margin-top: 20px;
+                        width: 92%;
+                    }
+                    .donation_dog_article{
+                        font-family: Arial;
+                        font-size: 12px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        margin-top: 20px;
+                        color: $color-dark-m;
+
+                    }
+
+                }
+            }
+        }
+    } //конец блока Donation
+
+    .shelter_footer{
+        display: flex;
+        background-image: url(../images/footer-background.png);
+        height: 350px;
+        width: 100%;
+
+        .footer_content{
+            display: inherit;
+            width: 93.8%;
+            margin-top: 40px;
+            justify-content: space-between;
+            margin: 40px auto 0px;
+
+            .footer_content_contacts{
+                display: inherit;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 234px;
+                margin-top: 16px;
+
+                .footer_contact_title {
+                    @extend %h3_h3;
+                    color: $color_light_xl;
+                    width: 100%;
+
+                }
+                .footer_contact_mail {
+                    @extend %h4_h4;
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 0.5%;
+                    color: $color_primary;
+
+                }
+                .footer_contact_phone{
+                    @extend %h4_h4;
+                    width: 86%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $color_primary;
+                }
+                .footer_content_location{
+                    display: inherit;
+                    flex-direction: column;
+                }
+
+                .footer_location_title{
+                    @extend %h3_h3;
+                    color: $color_light_xl;
+
+                }
+            }
+
+            .footer_content_location{
+                display: inherit;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 234px;
+                margin-top: 16px;
+                margin-right: 2%;
+
+                .footer_location_title{
+                    @extend %h3_h3;
+                    color: $color_light_xl;
+                 
+                }
+                .footer_location_Boston{
+                    @extend %h4_h4;
+                    width: 106.5%;
+                    display: inherit;
+                    text-align: left;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $color_primary;
+    
+                }
+                .footer_location_London{
+                    @extend %h4_h4;
+                    width: 97.5%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $color_primary;
+                }
+            }
+        }
     }
+
 }
