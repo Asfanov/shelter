@@ -8,6 +8,8 @@
 $color_primary: #F1CDB3;
 $color_primary_light: #FDDCC4;
 $color_light_s: #FAFAFA;
+$color-dark-l: #545454;
+$color_light_l: #F6F6F6;
 $color_light_xl: #FFFFFF;
 $color-dark-3xl: #292929;
 $color-dark-s: #CDCDCD;
@@ -95,7 +97,16 @@ $color_background: #E5E5E5;
     }
 
 }
-
+a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: inherit;
+}
 h1{
     margin: 0;
     padding: 0;
@@ -105,7 +116,7 @@ h1{
     vertical-align: baseline;
 }
 .content{
-    width: 1280px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -113,17 +124,15 @@ h1{
 
     .start_screen{
         height: 908px;
-        border: 1px solid black;
         background-image: url(../images/start-screen-background.jpg);
-
-
-
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .header{
             height: 60px;
-            width: 94%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 79.5%;
+            margin: 0 auto;
             top: 60px;
             display: flex;
             justify-content: space-between;
@@ -144,6 +153,7 @@ h1{
                         line-height: 110%;
                         letter-spacing: 2px;
                         color: $color_primary;
+                        cursor: pointer;
                     }
                     .logo_subTitle{
                         margin-left: 2%;
@@ -192,7 +202,7 @@ h1{
         .start_screen_content{
             height: 728px;
             margin-top: 60px;
-            width: 94%;
+            width: 79.5%;
             margin-left: auto;
             margin-right: auto;
             display: flex;
@@ -228,6 +238,7 @@ h1{
                 }
 
                 .start_screen_cntent_button_primery{ // здесь надо поработать нат коректным отоброжением текста внутри кнопки или переделеать на инпут
+                    @extend %button_primary;
                     width: 207px;
                     background-color: $color_primary;
                     border: 0;
@@ -258,9 +269,8 @@ h1{
 
     .about{
         height: 588px;
-        width: 100%;
         .about_container{
-            width: 94%;
+            width: 79%;
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -285,12 +295,11 @@ h1{
     } //конец блока about и начало слайдера
 
     .Pets{
-        background-color: $color_background;
+        background-color: $color_light_l;
         border: 0px;
         height: 877px;
-        width: 100%;
         .pets_container{
-            width: 94%;
+            width: 79%;
             margin-right: auto;
             margin-left: auto;
 
@@ -316,6 +325,11 @@ h1{
                         width: 52px;
                         border: 2px solid $color_primary;
                         border-radius: 50%;
+                        &:hover{
+                            cursor: pointer;
+                            border: 2px solid $color_primary_light;
+                            background-color: $color_primary_light;
+                        }
                     }
                     .slider_cards{
                       width: 82.5%;
@@ -326,9 +340,14 @@ h1{
                         .pets_slider_card{
                             height: 435px;
                             background-color: $color_light_s;
+                            border-radius: 9px;
                             display:flex;
                             flex-direction: column;
                             align-items: center;
+                            &:hover{
+                                cursor: pointer;
+                                box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+                            }
                             .slider_pets{
                                 @extend %Ag;
                                 margin-top: 30px;
@@ -396,7 +415,7 @@ h1{
             display: flex;
             justify-content: space-between;
             margin: 80px auto 0;
-            width: 71.49%;
+            width: 60.5%;
             height: 282px;
             .donation_content_container{
                 width: 100%;
@@ -420,12 +439,17 @@ h1{
                         margin-top: 20px;
                     }
                     .donation_input{
+                        @extend %h4_h4;
+                        display: inherit;
+                        align-items: center;
+                        justify-content: space-evenly;
                         height: 43px;
                         border-radius: 9px;
                         background-color: $color_primary;
                         border: 0;
                         margin-top: 20px;
-                        width: 92%;
+                        width: 92%;   
+                      
                     }
                     .donation_dog_article{
                         font-family: Arial;
@@ -448,12 +472,14 @@ h1{
     .shelter_footer{
         display: flex;
         background-image: url(../images/footer-background.png);
-        height: 350px;
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
 
         .footer_content{
             display: inherit;
-            width: 93.8%;
+            width: 79%;
             margin-top: 40px;
             justify-content: space-between;
             margin: 40px auto 0px;
